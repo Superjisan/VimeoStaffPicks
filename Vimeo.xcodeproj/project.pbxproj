@@ -11,6 +11,8 @@
 		904869DF1B4C949B0054DAF7 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 904869DE1B4C949B0054DAF7 /* Images.xcassets */; };
 		904869E21B4C949B0054DAF7 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 904869E01B4C949B0054DAF7 /* LaunchScreen.xib */; };
 		904869EE1B4C949B0054DAF7 /* VimeoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 904869ED1B4C949B0054DAF7 /* VimeoTests.swift */; };
+		904869F91B4D9A8F0054DAF7 /* StaffPicksViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 904869F71B4D9A8E0054DAF7 /* StaffPicksViewController.swift */; };
+		904869FA1B4D9A8F0054DAF7 /* StaffPicksViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 904869F81B4D9A8E0054DAF7 /* StaffPicksViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -32,6 +34,8 @@
 		904869E71B4C949B0054DAF7 /* VimeoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VimeoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		904869EC1B4C949B0054DAF7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		904869ED1B4C949B0054DAF7 /* VimeoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VimeoTests.swift; sourceTree = "<group>"; };
+		904869F71B4D9A8E0054DAF7 /* StaffPicksViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StaffPicksViewController.swift; sourceTree = "<group>"; };
+		904869F81B4D9A8E0054DAF7 /* StaffPicksViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = StaffPicksViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,6 +78,8 @@
 			isa = PBXGroup;
 			children = (
 				904869D71B4C949A0054DAF7 /* AppDelegate.swift */,
+				904869F71B4D9A8E0054DAF7 /* StaffPicksViewController.swift */,
+				904869F81B4D9A8E0054DAF7 /* StaffPicksViewController.xib */,
 				904869DE1B4C949B0054DAF7 /* Images.xcassets */,
 				904869E01B4C949B0054DAF7 /* LaunchScreen.xib */,
 				904869D51B4C949A0054DAF7 /* Supporting Files */,
@@ -188,6 +194,7 @@
 			files = (
 				904869E21B4C949B0054DAF7 /* LaunchScreen.xib in Resources */,
 				904869DF1B4C949B0054DAF7 /* Images.xcassets in Resources */,
+				904869FA1B4D9A8F0054DAF7 /* StaffPicksViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -205,6 +212,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				904869F91B4D9A8F0054DAF7 /* StaffPicksViewController.swift in Sources */,
 				904869D81B4C949A0054DAF7 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

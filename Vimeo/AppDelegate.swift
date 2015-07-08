@@ -19,10 +19,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         self.window = UIWindow(frame: UIScreen.mainScreen().bounds)
         
-        let viewController = UIViewController()
-        viewController.view.backgroundColor = UIColor.yellowColor()
-        
-        self.window?.rootViewController = viewController
+        self.window?.rootViewController = StaffPicksViewController(nibName:"StaffPicksViewController", bundle:nil)
         
         self.window?.makeKeyAndVisible()
         return true
