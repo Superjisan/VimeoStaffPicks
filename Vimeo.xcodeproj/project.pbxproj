@@ -8,8 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		904869D81B4C949A0054DAF7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 904869D71B4C949A0054DAF7 /* AppDelegate.swift */; };
-		904869DA1B4C949A0054DAF7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 904869D91B4C949A0054DAF7 /* ViewController.swift */; };
-		904869DD1B4C949B0054DAF7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 904869DB1B4C949B0054DAF7 /* Main.storyboard */; };
 		904869DF1B4C949B0054DAF7 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 904869DE1B4C949B0054DAF7 /* Images.xcassets */; };
 		904869E21B4C949B0054DAF7 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 904869E01B4C949B0054DAF7 /* LaunchScreen.xib */; };
 		904869EE1B4C949B0054DAF7 /* VimeoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 904869ED1B4C949B0054DAF7 /* VimeoTests.swift */; };
@@ -29,8 +27,6 @@
 		904869D21B4C949A0054DAF7 /* Vimeo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Vimeo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		904869D61B4C949A0054DAF7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		904869D71B4C949A0054DAF7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		904869D91B4C949A0054DAF7 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		904869DC1B4C949B0054DAF7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		904869DE1B4C949B0054DAF7 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		904869E11B4C949B0054DAF7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		904869E71B4C949B0054DAF7 /* VimeoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VimeoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -78,8 +74,6 @@
 			isa = PBXGroup;
 			children = (
 				904869D71B4C949A0054DAF7 /* AppDelegate.swift */,
-				904869D91B4C949A0054DAF7 /* ViewController.swift */,
-				904869DB1B4C949B0054DAF7 /* Main.storyboard */,
 				904869DE1B4C949B0054DAF7 /* Images.xcassets */,
 				904869E01B4C949B0054DAF7 /* LaunchScreen.xib */,
 				904869D51B4C949A0054DAF7 /* Supporting Files */,
@@ -192,7 +186,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				904869DD1B4C949B0054DAF7 /* Main.storyboard in Resources */,
 				904869E21B4C949B0054DAF7 /* LaunchScreen.xib in Resources */,
 				904869DF1B4C949B0054DAF7 /* Images.xcassets in Resources */,
 			);
@@ -212,7 +205,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				904869DA1B4C949A0054DAF7 /* ViewController.swift in Sources */,
 				904869D81B4C949A0054DAF7 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -236,14 +228,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		904869DB1B4C949B0054DAF7 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				904869DC1B4C949B0054DAF7 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		904869E01B4C949B0054DAF7 /* LaunchScreen.xib */ = {
 			isa = PBXVariantGroup;
 			children = (
