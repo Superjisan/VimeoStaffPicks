@@ -13,7 +13,7 @@ class StaffPicksViewController: UIViewController, UITableViewDataSource {
     @IBOutlet var tableView: UITableView?
     
     
-    let items = ["Jisan", "Geri", "Kate"]
+    var items: Array<Video> = []
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -42,14 +42,17 @@ class StaffPicksViewController: UIViewController, UITableViewDataSource {
         
         let cell = tableView.dequeueReusableCellWithIdentifier(NSStringFromClass(VideoCell.self)) as! VideoCell
         
-        cell.nameLabel?.text = self.items[indexPath.row]
+        let video = self.items[indexPath.row]
+        cell.nameLabel?.text = video.name
         
         return cell
     }
     
     func refreshItems(){
         VimeoClient.staffpicks { (videos, error) -> Void in
-            println("error: \(error) \n videos: \(videos)")
+            if let constVideos = videos {
+                self.items = constVideos
+            }
         }
     }
 
