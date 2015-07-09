@@ -13,7 +13,7 @@
                 <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wYI-2h-S34">
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="1000" verticalHuggingPriority="1000" horizontalCompressionResistancePriority="1000" verticalCompressionResistancePriority="1000" misplaced="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wYI-2h-S34">
                         <rect key="frame" x="8" y="48" width="42" height="21"/>
                         <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.5" colorSpace="calibratedRGB"/>
                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
@@ -23,9 +23,25 @@
                 </subviews>
                 <constraints>
                     <constraint firstItem="wYI-2h-S34" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="8zi-JI-UEC"/>
+                    <constraint firstItem="wYI-2h-S34" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="BBD-hv-uQO"/>
                     <constraint firstAttribute="bottom" secondItem="wYI-2h-S34" secondAttribute="bottom" constant="10" id="CeN-Hm-TGz"/>
+                    <constraint firstItem="wYI-2h-S34" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="O57-Pj-1tn"/>
+                    <constraint firstAttribute="trailing" secondItem="wYI-2h-S34" secondAttribute="trailing" constant="10" id="QuS-gh-XeY"/>
+                    <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="wYI-2h-S34" secondAttribute="trailing" constant="10" id="Ta4-Ma-0Ak"/>
+                    <constraint firstAttribute="bottom" secondItem="wYI-2h-S34" secondAttribute="bottom" constant="10" id="hOx-BA-6aZ"/>
                     <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="wYI-2h-S34" secondAttribute="trailing" constant="10" id="lox-He-jgh"/>
+                    <constraint firstAttribute="bottom" secondItem="wYI-2h-S34" secondAttribute="bottom" constant="10" id="pn7-QZ-FdP"/>
                 </constraints>
+                <variation key="default">
+                    <mask key="constraints">
+                        <exclude reference="BBD-hv-uQO"/>
+                        <exclude reference="O57-Pj-1tn"/>
+                        <exclude reference="QuS-gh-XeY"/>
+                        <exclude reference="hOx-BA-6aZ"/>
+                        <exclude reference="lox-He-jgh"/>
+                        <exclude reference="pn7-QZ-FdP"/>
+                    </mask>
+                </variation>
             </tableViewCellContentView>
             <color key="backgroundColor" red="1" green="0.40000000596046448" blue="0.40000000596046448" alpha="1" colorSpace="calibratedRGB"/>
             <connections>
