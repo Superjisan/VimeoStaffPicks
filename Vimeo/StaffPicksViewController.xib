@@ -6,6 +6,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="StaffPicksViewController" customModule="Vimeo" customModuleProvider="target">
             <connections>
+                <outlet property="tableView" destination="8YL-qM-Xyx" id="HyX-4O-ipt"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -17,11 +18,18 @@
                 <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="8YL-qM-Xyx">
                     <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="ha6-CM-Bfa"/>
+                    </connections>
                 </tableView>
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
             <constraints>
+                <constraint firstItem="8YL-qM-Xyx" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="8" id="4JC-CU-8yz"/>
+                <constraint firstAttribute="trailing" secondItem="8YL-qM-Xyx" secondAttribute="trailing" constant="8" id="MI4-ix-6Pt"/>
                 <constraint firstAttribute="trailing" secondItem="8YL-qM-Xyx" secondAttribute="trailing" id="Ms7-Zb-NVK"/>
+                <constraint firstItem="8YL-qM-Xyx" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="8" id="Sm1-sC-Xqe"/>
+                <constraint firstAttribute="bottom" secondItem="8YL-qM-Xyx" secondAttribute="bottom" constant="8" id="eJ3-Z1-AmB"/>
                 <constraint firstItem="8YL-qM-Xyx" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="oI7-g0-O7I"/>
                 <constraint firstAttribute="bottom" secondItem="8YL-qM-Xyx" secondAttribute="bottom" id="tqR-3V-DfL"/>
                 <constraint firstItem="8YL-qM-Xyx" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="yNf-s3-Vd7"/>
