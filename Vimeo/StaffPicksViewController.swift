@@ -26,7 +26,10 @@ class StaffPicksViewController: UIViewController, UITableViewDataSource {
     
     //MARK: Setup
     func setupTableView(){
-        self.tableView?.registerClass(VideoCell.self, forCellReuseIdentifier: NSStringFromClass(VideoCell.self))
+        
+        let nib = UINib(nibName: "VideoCell", bundle: nil)
+        self.tableView?.registerNib(nib, forCellReuseIdentifier: NSStringFromClass(VideoCell.self))
+        
     }
     
     //MARK: UITableViewDataSource
@@ -38,7 +41,7 @@ class StaffPicksViewController: UIViewController, UITableViewDataSource {
         
         let cell = tableView.dequeueReusableCellWithIdentifier(NSStringFromClass(VideoCell.self)) as! VideoCell
         
-        cell.textLabel?.text = self.items[indexPath.row]
+        cell.nameLabel?.text = self.items[indexPath.row]
         
         return cell
     }
