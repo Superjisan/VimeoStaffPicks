@@ -43,13 +43,7 @@ class StaffPicksViewController: UIViewController, UITableViewDataSource {
         let cell = tableView.dequeueReusableCellWithIdentifier(NSStringFromClass(VideoCell.self)) as! VideoCell
         
         let video = self.items[indexPath.row]
-        cell.nameLabel?.text = video.name
-        if let constDuration = video.duration {
-             cell.durationLabel?.text = "\(constDuration)"
-        }else{
-            cell.durationLabel?.text = "--:--"
-        }
-       
+        cell.video = video
         
         return cell
     }
@@ -59,6 +53,8 @@ class StaffPicksViewController: UIViewController, UITableViewDataSource {
             if let constVideos = videos {
                 self.items = constVideos
                 self.tableView?.reloadData()
+            }else{
+                //TODO: alert the user
             }
         }
     }
