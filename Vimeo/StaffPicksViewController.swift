@@ -44,6 +44,12 @@ class StaffPicksViewController: UIViewController, UITableViewDataSource {
         
         let video = self.items[indexPath.row]
         cell.nameLabel?.text = video.name
+        if let constDuration = video.duration {
+             cell.durationLabel?.text = "\(constDuration)"
+        }else{
+            cell.durationLabel?.text = "--:--"
+        }
+       
         
         return cell
     }
@@ -52,6 +58,7 @@ class StaffPicksViewController: UIViewController, UITableViewDataSource {
         VimeoClient.staffpicks { (videos, error) -> Void in
             if let constVideos = videos {
                 self.items = constVideos
+                self.tableView?.reloadData()
             }
         }
     }
